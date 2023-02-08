@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical Assessment 2 - Calculator</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+        <!-- Javascript -->
+        <script src="javascript.js" defer></script>
+</head>
+<body>
+    <!-- Header Title "Calculator App" -->
+    <header>       
+        <div class="title">
+            <h1>Calculator App</h1>
+        </div>
+    </header>
+
+    <!-- Main Body -->
+    <main>
+
+        <!-- Calculator -->
+        <div class="calculator">
+
+            <!-- Calculator input 1 & 2 -->
+            <form id="frm1">
+                <div class="box-1">
+                    <label for="num1">Enter first number/s:</label>
+                    <input type="number" id="num1" name="num1" required>
+                </div>
+                
+                <div class="box-2">
+                    <label for="num2">Enter second number/s:</label>
+                    <input type="number" id="num2" name="num2" required>
+                </div>
+                
+                <!-- Result output -->
+                <p id="result"></p>
+
+                <!-- Calculator buttons -->
+                <div class="btns">
+                    <button class="buttons" id="plus">+</button>
+                    <button class="buttons" id="minus">-</button>
+                    <button class="buttons" id="multiply">*</button>
+                    <button class="buttons" id="divide">/</button>
+                    <button class="buttons" id="percentage">%</button>
+                    <button class="buttons" id="clear">Clear</button>
+                    <button id="exit">Exit</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>        
+</body>
+</html>

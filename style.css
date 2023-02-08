@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(64, 168, 165);
+    font-family: 'Azeret Mono', monospace;
+    font-size: 1.1rem;
+    color: black;
+}
+
+/* Title "Calculator App" */
+
+/* Span only targets the "THANK YOU" in THANK YOU page */
+span {
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+    background-color: rgb(174, 212, 134);
+    padding: .5rem;
+}
+
+.title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.title h1 {
+ font-size: 3.5rem;
+ color: white;
+}
+
+/* specifically for THANK YOU page */
+#thank, #thank h1 {
+    width: 100%;
+    padding: 3rem;
+    font-size: 2rem;
+    border: solid 5px white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(174, 212, 134);
+}
+
+
+/* Main body */
+.calculator {
+    display: flexbox;
+    padding: .8rem;
+    border: solid 10px white;
+    border-radius: 5px;    
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form {
+    text-align: center;
+    padding: .5rem;
+}
+
+input {
+    width: 100%;
+    padding: .3rem;
+    border: solid 1px black;
+    border-radius: 5px;
+    background: white;
+}
+
+div.box-1, .box-2 {
+    padding:.3rem;
+}
+
+
+/* Box where the answers are displayed using JS */
+p{
+    margin: 5%;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    border: solid 2px white;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+
+/* Button Stylings  */
+.btns {
+    margin: auto;
+    width: 100%;
+    position: static;
+}
+
+button {
+    display:inline-block;
+    position:relative;
+    margin: .5rem;
+    padding: .8rem;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+
+/* Hover styles used in JS*/
+.buttonHovers {
+    padding: .8rem;
+    font-size: 1rem; 
+    font-weight: bold; 
+    background-color: rgb(174, 212, 134);
+    color: white;
+    border: solid 3px white;
+}
+
+.buttonHoverExit {
+    padding: .8rem; 
+    font-size: 1rem; 
+    font-weight: bold;
+    color: white; 
+    background-color: tomato;
+    border: solid 3px white;
+}
+
+
+/* Media Queries */
+
+/* Large Phone */
+@media screen and (max-width: 425px) {
+
+    .calculator {
+        position:fixed;
+        padding: 1rem;
+        width: 80%;
+        height: 70vh;
+    }
+
+    .title h1 {
+        font-size: 2.5rem;
+    }
+
+    div.box-1, .box-2 {
+        padding: 1rem;
+        height: 10vh;
+    }
+
+    input {
+        width: 80%;
+        padding: 1rem;
+    }
+
+    p {
+        padding: 2rem;
+        height: 10vh;
+    }
+
+    button {
+        padding: 1rem;
+    }
+
+    .buttonHovers, .buttonHoverExit {
+        padding: 1rem;
+        font-weight: bolder; 
+    }
+
+    #thank, #thank h1 {
+        padding-top: 30%;
+        padding-bottom: 30%;
+    }
+
+    .btns #return {
+        font-size: 1.5rem;
+    }
+}
+
+/* Medium Phone */
+@media screen and (max-width: 375px) {
+    
+    .title h1 {
+        font-size: 2rem;
+    }
+
+    .calculator {
+        position:fixed;
+        padding: 2.5rem;
+        width: 70%;
+        height: 65vh;
+    }
+    
+    div.box-1, .box-2 {
+        padding: 1rem;
+    }
+    
+    input {
+        width: 100%;
+        padding: .8rem;
+    }
+    
+    p {
+        padding: 1.5rem;
+    }
+    
+    button {
+        padding: .5rem;
+    }
+    
+    .buttonHovers, .buttonHoverExit {
+        padding: .5rem;
+        font-weight: bolder; 
+    }
+
+    #thank, #thank h1 {
+        padding-top: 40%;
+        padding-bottom: 40%;
+    }
+    
+    .btns #return {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Small Phone */
+@media screen and (max-width: 320px) {
+
+    .title h1 {
+        font-size: 1.8rem;
+    }
+
+    .calculator {
+        position:fixed;
+        padding: 2rem;
+        width: 70%;
+        height: 65vh;
+    }
+    
+    div.box-1, .box-2 {
+        padding: 1rem;
+    }
+    
+    input {
+        width: 100%;
+        padding: .5rem;
+    }
+    
+    p {
+        margin: 10%;
+        width: 60%;
+        padding: 1.5rem;
+    }
+    
+    button {
+        padding: .5rem;
+    }
+    
+    .buttonHovers, .buttonHoverExit {
+        padding: .5rem;
+        font-weight: bolder; 
+    }
+
+    #thank, #thank h1 {
+        padding-top: 40%;
+        padding-bottom: 40%;
+        max-width: 80%;
+        font-size: 1.5rem;
+    }
+
+    span {
+        font-size: 2.5rem;
+        font-weight: bolder;
+    }
+
+    .btns #return {
+        font-size: 1.5rem;
+    }
+}
